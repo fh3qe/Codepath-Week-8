@@ -46,8 +46,11 @@ Vulnerability #2: Cross-Site Scripting
 
 ## Red
 
-Vulnerability #1: __________________
-
+Vulnerability #1: Insecure Direct Object Reference
+  - [x] GIF Walkthrough: 
+  		 <img src="Red - Insecure Direct Object Reference.gif" width="800">
+  - [x] Steps to recreate: 
+  	- When inspecting the Salesperson listing, I noticed that the IDs listed only go up to 9. So I tested for "id=10" and was able to access the corresponding salesperson on the Red website.
 Vulnerability #2: __________________
 
 
