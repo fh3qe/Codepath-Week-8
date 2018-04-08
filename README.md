@@ -18,7 +18,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: SQL Injection (SQLI)
   - [x] GIF Walkthrough: 
-  	- <img src="Blue-SQLI.gif" width="800">
+  	- <img src="Blue - SQLI.gif" width="800">
   - [x] Steps to recreate: 
   	- I checked every website for a vulnerability by messing with the id field of the "Find a Salesperson" functionality and found a SQLI vulnerability in the Blue website. Then I formatted my id field to call a SLEEP(5) command (id='OR SLEEP(5)=0--') which was then executed. 
 
