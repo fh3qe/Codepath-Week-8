@@ -57,7 +57,8 @@ Vulnerability #2: Cross-Site Request Forgery
   		 <img src="Red - CSRF.gif" width="800">
   - [x] Steps to recreate: 
   	- I wrote a HTML file with the following sourcecode (also in the repository):
-  			"<html>
+  			```html
+  			<html>
 				<head>
 					<title> Hello World! </title>
 				</head>
@@ -68,7 +69,8 @@ Vulnerability #2: Cross-Site Request Forgery
 					</form>
 					<iframe name="res" style="display: none;"></iframe>
 				</body>
-			</html>"
+			</html>
+			```
 	- The HTML file (which I hosted on WPDistillery as an easy access point) executes when loaded, which will edit the first and last name of the Users on the page. In this instance, I targeted Jon Monroe. However, the admin can't tell that anything was submitted or that any information was changed until they look at the User's page. 
 
 
