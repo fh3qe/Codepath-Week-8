@@ -31,9 +31,17 @@ Vulnerability #2: Session Hijacking/Fixation
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
+  - [x] GIF Walkthrough: 
+  	- <img src="Green - Username Enumeration.gif" width="800">
+  - [x] Steps to recreate: 
+  	- Upon testing the Login functionality of all the websites, I saw that there was a difference in styling for the unsuccessful login message on the Green website. When you fed a dummy username, the resulting message would be unbolded. However when you used a legitimate username (jmonroe99), the message would be bolded. Thus an attacker could enumerate through the website and find legitimate usernames to attack for passwords. 
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting
+  - [x] GIF Walkthrough: 
+  	- <img src="Green - XSS.gif" width="800">
+  - [x] Steps to recreate: 
+  	- When submitting a javascript snippet into the comment portion of the contact form ("<script>alert("Oh no, not again!");</script>"), the snippet will be run when you login and click the Feedback tab.
 
 
 ## Red
