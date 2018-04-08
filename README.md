@@ -41,7 +41,7 @@ Vulnerability #2: Cross-Site Scripting
   - [x] GIF Walkthrough: 
   		 <img src="Green - XSS.gif" width="800">
   - [x] Steps to recreate: 
-  	- When submitting a javascript snippet into the comment portion of the contact form ("<script>alert("Oh no, not again!");</script>"), the snippet will be run when you login and click the Feedback tab.
+  	- When submitting a javascript snippet into the comment portion of the contact form ("<script>alert("Frank found the XSS!");</script>"), the snippet will be run when you login and click the Feedback tab.
 
 
 ## Red
